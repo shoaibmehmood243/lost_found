@@ -1,14 +1,14 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { logo } from "./assets";
+import { logoPng } from "./assets";
 import { Home, CreatePost } from "./pages";
 
 function App() {
   return (
     <BrowserRouter>
       <header className="w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
-        <Link to="/" className='text-lg font-semibold'>
-          Lost & Found
+        <Link to="/" className='text-lg font-semibold flex items-center gap-3'>
+          <img src={logoPng} alt="logo" className="w-12 object-contain" />Lost & Found
         </Link>
 
         <Link to="/create-post" className="font-inter font-medium bg-[#6469ff] text-white px-4 py-2 rounded-md">Create</Link>

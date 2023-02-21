@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { search } from '../assets';
 import { Loader, Card, FormField } from "../components"
 
 const RenderCards = ({ data, title }) => {
@@ -57,8 +58,13 @@ const Home = () => {
 
   return (
     <section className="max-w-7xl mx-auto">
-      <div>
-        <h1 className="font-extrabold text-start text-[#222328] text-[32px]">Lost Things Info Listed here</h1>
+      <div className='flex gap-6 items-center lg:flex-row flex-col'>
+        <div>
+          <h1 className="font-extrabold text-start text-[#222328] text-[32px]">Lost Things Info Listed here</h1>
+        </div>
+        <div>
+          <img className='w-full h-60' src={search} />
+        </div>
       </div>
 
       <div className="mt-16">
